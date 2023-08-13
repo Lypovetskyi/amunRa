@@ -1,3 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmunRa</title>
+
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header"> 
+        <div class="header-container">
+            <div class="header-nav">
+                <div class="burger-btn">
+                    <a class="burger-btn-link" href="#!"><img src="/img/Header/burger-btn.png" alt="burger"></a>
+                </div>
+                <div class="burger-nav">
+                    <a href="#!" class="nav__list-link">Promotions</a>
+                    <a href="#!" class="nav__list-link">Collections</a>
+                    <a href="#!" class="nav__list-link">Shop</a>
+                </div>
+            </div> 
+
+            <div class="header-logo">
+                <div class="header-logo-img">
+                    <a class="header-logo-link" href="#!"><img src="/img/Header/header-logo.svg" alt="AmunRa"></a>
+                </div>
+                <div class="header-sub-nav">
+                    <div class="header-sub-nav-links">
+                        <a href="#!" class="sub_nav__list-link">Casino</a>
+                        <a href="#!" class="sub_nav__list-link">Live Casino</a>
+                        <a href="#!" class="sub_nav__list-link">Sports</a>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="header-btn">
+                <a class="btn-crab" href="#!"><img src="/img/Header/btn-crab.svg" alt="crab"></a>
+                <a class="btn-login" href="#!">Login</a>
+                <a class="btn-join-now" href="#!">Join now</a>
+                <a class="btn-search" href="#!"><img src="/img/Header/btn-search.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+
+    
+</body>
+</html>
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
@@ -155,9 +209,8 @@ body {
     transition: transform 0.2s ease; /* Добавляем переход для transform */
 }
 
-.btn-login::before,
-.btn-join-now::before {
-    content: "Login";
+.btn-login::before {
+    content: "login";
     position: absolute;
     top: 2px;
     left: 2px;
@@ -185,7 +238,35 @@ body {
     padding-top: 9px;
     padding-bottom: 7px;
 }
+.btn-join-now::before {
+    content: "join now";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 136px;
+    height: 36px;
+    border-radius: 78px;
+    border-radius: 78px;
+    background: linear-gradient(180deg, #3B1303 0%, #561905 100%);
+    box-shadow: 0px 0.7272726893424988px 0.7272726893424988px 0px #FFF615, 0px -1.4545453786849976px 14.545454025268555px 0px #711919 inset;
+    transition: background var(--transitionTime);
 
+
+    color: #FFF;
+    text-align: center;
+    text-shadow: 1px -1px 1px #4C1405;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
 
 
 .btn-login:hover,
