@@ -1,0 +1,325 @@
+.footer {
+
+    width: auto;
+    margin: 0 auto;
+    background-image: url(/img/Footer/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-container {
+    max-width: 1130px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    /* display: flex; */
+
+}
+.footer-main {
+    justify-content: space-between;
+    max-width: 1130px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+
+.footer-main-item  {
+    padding-top: 38px;
+    max-width: 1130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+}
+.footer-main-item-btn  {
+    display: flex;
+    column-gap: 8px;
+}
+
+.footer-main-item-btn-row {
+    display: flex;
+    width: auto;
+    height: 52px;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    border-radius: 4px;
+    background: var(--dark-brown, #241502);
+
+}
+.footer-main-item-img {
+    margin: 10px 16px;
+}
+.footer-main-item-list {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 16px;
+}
+.footer-main-sub-item-link {
+    color: var(--light-brown-1, #E9C8B0);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item-link-p {
+    color: var(--light-brown, #AF876B);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+.footer-main-sub-item-btn {
+    color: aliceblue;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+
+.footer-main-sub-item-row {
+    height: 52px;
+    display: flex;
+    width: auto;
+    height: 52px;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    border-radius: 4px;
+    background: var(--dark-brown, #241502);
+}
+.footer-main-sub-item-img {
+    margin: 10px 16px;
+}
+.footer-main-sub-item-list {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 16px;
+}
+.footer-main-sub-item-link {
+    color: var(--light-brown-1, #E9C8B0);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+
+}
+
+.footer-main-sub-item-row:hover,
+.footer-main-item-btn-row:hover {
+    background-color: #72482b;
+    transform: translateY(-2px);
+}
+
+
+/* footer-list-container */
+
+.footer-list-container {
+    max-width: 1130px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    column-gap: 21px;
+}
+.footer-list-container-mob {
+    display: none;
+}
+
+.footer-list-nav-info {
+    width: 204px;
+
+}
+.footer-list-nav-link {
+    display: grid;
+}
+.footer-list-nav-text-style {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    align-items: center;
+    color: var(--light-brown, #AF876B);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19.6px;
+}
+.footer-list-nav-link  {
+
+}
+
+.footer-sublist-nav-text-style {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    color: var(--light-brown-1, #E9C8B0);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.6px;
+}
+.footer-sublist-nav-text-style:hover {
+    opacity: 0.7;
+}   
+
+
+
+/* footer-payment-method */
+
+.footer-payment-method {
+    max-width: 1530px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 56px;
+}
+
+
+.payment-method-btn {
+    width: 483px;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    column-gap: 8px;
+}
+.payment-method-link {
+    width: 116px;
+    height: 54px;
+
+    border-radius: 4px;
+    background: var(--dark-brown, #241502);
+    padding-top: 16px;
+    padding-bottom: 15px;
+    align-items: center;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.payment-method-link:last-child {
+    background: none;
+
+    color: var(--colors-white, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.6px;
+}
+.payment-method-link:last-child img {
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+.payment-method-link img {
+    align-items: center;
+}
+.payment-method-link:hover {
+    background-color: #72492b6a;
+}
+
+.payment-method-link:hover:last-child img {
+    transform: translateX(3px);
+    transition: transform 0.3s ease;
+}
+
+.payment-method-link:hover:last-child {
+    opacity: 0.7;
+    background-color: transparent; 
+}
+
+
+/* footer licences */
+
+.footer-licenses {
+    max-width: 1084px;
+    margin-top: 16px;
+    margin-bottom: 20.5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    justify-content: center;
+
+   
+}
+.licenses-list-img {
+    max-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+    display: flex;
+    column-gap: 24px;
+}
+
+
+.footer-licenses-text {
+    max-width: 1084px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 15px;
+}
+
+.footer-licenses-text-title {
+    display: flex;
+    margin: 0 auto;
+    column-gap: 6px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.footer-licenses-text-title:hover {
+    opacity: 0.7;
+    transform: translateY(-3px);
+}
+.footer-licenses-text-title img {
+    margin-left: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-licenses-text a {
+    margin: 0;
+    padding-bottom: 16px;
+    color: var(--colors-white, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px; 
+    align-self: center;
+}
+
+
+.footer-licenses-text p {
+    color: var(--light-grey, #BFBFBF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.6px;
+    margin-bottom: 10px;
+}

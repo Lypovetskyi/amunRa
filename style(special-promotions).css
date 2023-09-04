@@ -1,0 +1,130 @@
+.promotions-list {
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.promotions-container {
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.promotions-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 36.757px;
+    text-transform: capitalize;
+}
+
+.promotions-list-item {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    column-gap: 24px;
+    justify-content: space-between;
+}
+.promo-list-item-link {
+    display: flex;
+    position: relative;
+}
+.promo-list-card {
+    margin: 0 auto;
+
+    position: relative;
+
+
+    height: 474px;
+    width: 325px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/special-promotions/promo-card-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.promo-list-img {
+    margin-top: 15px;
+    border-radius: 4px;
+}
+.promo-card-name {
+    
+
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 135px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/img/special-promotions/promo-card-name-bg.png);
+}
+.promo-card-name::before {
+    content: "";
+    background-image: url(/img/special-promotions/line.png);
+
+    width: 300x;
+    height: 14px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+.promo-card-name h1 {
+    margin: 0;
+    width: 310px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    color: var(--orange, #F90);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 24px */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.promo-card-name p {
+    padding-left: 48px;
+    padding-right: 48px;
+    margin: 0;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    transition: opacity 0.3s; /* Добавляем анимацию для плавного исчезания */
+}
+
+.promo-card-name p:hover {
+    opacity: 0; /* При наведении, текст исчезнет */
+}
+/* Скрытый контент при обычном состоянии */
+.promo-card-name .hidden-content {
+    display: none;
+}
+
+/* Видимый контент при ховере */
+.promo-card-name:hover .hidden-content {
+    display: block;
+}
+
+/* Скрытый контент при ховере */
+.promo-card-name:hover .visible-content {
+    display: none;
+}

@@ -7,25 +7,49 @@
 
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style(main).css">
+    <link rel="stylesheet" href="/style(game-list).css">
+    <link rel="stylesheet" href="/style(special-promotions).css">
+    <link rel="stylesheet" href="/article.css">
+    <link rel="stylesheet" href="/footer.css">
+
+    <!-- Mobile -->
+    <link rel="stylesheet" href="/mobile-css/mobile1024px.css">
+    <link rel="stylesheet" href="/mobile-css/mobile768px.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
     <!-- Header -->
     <header class="header"> 
         <div class="header-container">
+            
             <div class="header-nav">
                 <div class="burger-btn">
-                    <a class="burger-btn-link" href="#!"><img src="/img/Header/burger-btn.png" alt="burger"></a>
+                    <a id="burger-btn-link" href="#!"><img class="burger-btn-img-desc" src="/img/Header/burger-btn.png" alt="burger"></a>
+                    <a id="burger-btn-link-mob"  href="#!"><img class="burger-btn-img-mob" src="/img/mobile1024/header/burger.svg" alt=""></a>
+                    <!-- <img class="burger-btn-img-mob" src="/-css/1024/header/burger.svg" alt="burger"> -->
                 </div>
-                <div class="burger-nav">
+                
+                <div class="burger-nav-desc" id="burger-nav-desc">
                     <a href="#!" class="nav__list-link">Promotions</a>
                     <a href="#!" class="nav__list-link">Collections</a>
                     <a href="#!" class="nav__list-link">Shop</a>
                 </div>
+                <div class="burger-nav-mob" id="burger-nav-mob">
+                    <a href="#!" class="nav__list-link-mob">Promotions</a>
+                    <a href="#!" class="nav__list-link-mob">Collections</a>
+                    <a href="#!" class="nav__list-link-mob">Shop</a>
+                </div>
             </div> 
 
             <div class="header-logo">
+                <div class="header-logo-img-mob">
+                    <a class="header-logo-img-link-mob" href="/index.html"><img src="/img/mobile1024/header/logo.svg" alt="#!"></a>
+                </div>
                 <div class="header-logo-img">
                     <a class="header-logo-link" href="#!"><img src="/img/Header/header-logo.svg" alt="AmunRa"></a>
                 </div>
@@ -39,16 +63,646 @@
                 </div>
             </div>
 
-            <div class="header-btn">
+            <div class="header-btn" id="header-btn">
                 <a class="btn-crab" href="#!"><img src="/img/Header/btn-crab.svg" alt="crab"></a>
                 <a class="btn-login" href="#!">Login</a>
                 <a class="btn-join-now" href="#!">Join now</a>
-                <a class="btn-search" href="#!"><img src="/img/Header/btn-search.svg" alt=""></a>
+                <a class="btn-search" href="#!"><img src="/img/Header/btn-search.svg" alt="btn-search"></a>
             </div>
         </div>
+
     </header>
 
+    <!-- header-end -->
 
+    <!-- Main -->
+    <div class="main">
+        <div class="main-container">
+            <div class="main-title">Casino Welcome Bonus</div>
+            <div class="main-btn-arr">
+                <span class="main-btn-left">
+                    <a href="#!"><img src="/img/main/arrow-left.svg" alt="btn-left"></a>
+                </span>
+                <span class="main-btn-right">
+                    <a href="#"><img src="/img/main/arrow-right.svg" alt="btn-right"></a>
+                </span>
+            </div>
+            <div class="main-bonus">100% up to €500 +100 Free Spins</div>
+            <div  class="main-btn">
+                <a class="main-btn-link" href="#!"> PLAY NOW</a>
+            </div>
+            <div class="main-slider-radio">
+                 <a class="radio-links" href="#!"></a>
+                 <a class="radio-links" href="#!"></a>
+                 <a class="radio-links" href="#!"></a>
+            </div>
+        </div>  
+    </div>
+
+    <!-- Main-end -->
+
+
+    <!-- Games List -->
+    <div class="games-list">
+
+        <div class="game-list-container">
+
+            <!-- Casino -->
+            <div class="games-title">
+                <div class="title-text">Casino</div>
+                <div class="title-game">
+                    <a href="#!">Play Now <img src="/img/games-list/arrow-right-small.svg" alt="arr-right"></a>
+                </div>
+            </div>
+
+            <div class="game-list-item">
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/casino/top.png" alt="Top"></div>
+                    <div class="game-card-name"><p>Top</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/casino/Scratch-cards.png" alt="Scratch-cards"></div>
+                    <div class="game-card-name"><p>Scratch-cards</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/casino/New.png" alt="New"></div>
+                    <div class="game-card-name"><p>New</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/casino/popular.png" alt="Popular"></div>
+                    <div class="game-card-name"><p>Popular</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/casino/Exclusive.png" alt="Exclusive"></div>
+                    <div class="game-card-name"><p>Exclusive</p></div>
+                </a>
+               
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/casino/Live-games.png" alt="Livegames"></div>
+                    <div class="game-card-name"><p>Live games</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/casino/Slots.png" alt="Slots"></div>
+                    <div class="game-card-name"><p>Slots</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/casino/Jackpots.png" alt="Jackpots"></div>
+                    <div class="game-card-name"><p>Jackpots</p></div>
+                </a>
+               
+                
+            </div>
+            <!-- Casino-end -->
+
+            <!-- Live-Casino -->
+            <div class="games-title">
+                <div class="title-text">Live Casino</div>
+                <div class="title-game">
+                    <a href="#!">See all <img src="/img/games-list/arrow-right-small.svg" alt="arr-right"></a>
+                </div>
+            </div>
+
+            <div class="game-list-item">
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/live-casino/club-royale.png" alt="Club royale"></div>
+                    <div class="game-card-name"><p>Club royale</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/live-casino/TopRated.png" alt="TopRated"></div>
+                    <div class="game-card-name"><p>Top Rated</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/live-casino/Roulette.png" alt="Roulette"></div>
+                    <div class="game-card-name"><p>Roulette</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/live-casino/blackjack.png" alt="blackjack"></div>
+                    <div class="game-card-name"><p>BlackJack</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/live-casino/gameshows.png" alt="GameShows"></div>
+                    <div class="game-card-name"><p>Game Shows</p></div>
+                </a>
+               
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/live-casino/baccarat&dice.png" alt="BaccaratDice"></div>
+                    <div class="game-card-name"><p>Baccarat & Dice</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/live-casino/poker.png" alt="Poker"></div>
+                    <div class="game-card-name"><p>Poker</p></div>
+                </a>
+                <a class="game-list-item-link" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/live-casino/gameshows.png" alt="GameListCard"></div>
+                    <div class="game-card-name"><p>All live casino</p></div>
+                </a>
+               
+                
+            </div>
+            <!-- Live-Casino-end -->
+
+            <!-- Sports -->
+            <div class="games-title">
+                <div class="title-text">Sports</div>
+                <div class="title-game">
+                    <a href="#!">Place bet <img src="/img/games-list/arrow-right-small.svg" alt="arr-right"></a>
+                </div>
+            </div>
+
+            <div class="game-list-item">
+                <a class="game-list-item-link-last" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/sports/live-betting.png" alt="Live betting"></div>
+                    <div class="game-card-name"><p>Live betting</p></div>
+                </a>
+                <a class="game-list-item-link-last" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/sports/footbal.png" alt="Football"></div>
+                    <div class="game-card-name"><p>Football</p></div>
+                </a>
+                <a class="game-list-item-link-last" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/sports/tennis.png" alt="Tennis"></div>
+                    <div class="game-card-name"><p>Tennis</p></div>
+                </a>
+                <a class="game-list-item-link-last" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/sports/basketball.png" alt="basketball"></div>
+                    <div class="game-card-name"><p>Basketball</p></div>
+                </a>
+                <a class="game-list-item-link-last" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/sports/ice-hockey.png" alt="ice-hockey"></div>
+                    <div class="game-card-name"><p>Ice Hockey</p></div>
+                </a>
+               
+                <a class="game-list-item-link-last" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/sports/table-tennis.png" alt="table-tennis"></div>
+                    <div class="game-card-name"><p>Table tennis</p></div>
+                </a>
+                <a class="game-list-item-link-last" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/sports/horse-racing.png" alt="horse-racing"></div>
+                    <div class="game-card-name"><p>Horse racing</p></div>
+                </a>
+                <a class="game-list-item-link-last" href="#!">
+                    <div class="game-list-card"><img class="game-list-img" src="/img/games-list/games-list/sports/virtuals.png" alt="Virtuals"></div>
+                    <div class="game-card-name"><p>Virtuals</p></div>
+                </a>
+            </div>
+            <!-- Sports-end -->
+
+            <!-- Special promotions -->
+            <div class="promotions-list">
+                <div class="promotions-container">
+                    <div class="promotions-title">Specials Promotions</div>
+                    <div class="promotions-list-item">
+
+                        <a class="promo-list-item-link" href="#!">
+                            <div class="promo-list-card"><img class="promo-list-img" src="/img/special-promotions/collections.png" alt="collections">
+                                <div class="promo-card-name">
+                                    <h1>Collections</h1>
+                                    <p>Get guaranteed prize <br> up to €3,000</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="promo-list-item-link" href="#!">
+                            <div class="promo-list-card"><img class="promo-list-img" src="/img/special-promotions/Spin-rally.png" alt="collections">
+                                <div class="promo-card-name">
+                                    <h1>Spin rally</h1>
+                                    <p>Prize Pool <br> up to €200
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="promo-list-item-link" href="#!">
+                            <div class="promo-list-card"><img class="promo-list-img" src="/img/special-promotions/masters.png" alt="collections">
+                                <div class="promo-card-name">
+                                    <h1>The Masters</h1>
+                                    <p>Sports Tournament <br> up to €1,500</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="promo-list-item-link" href="#!">
+                            <div class="promo-list-card"><img class="promo-list-img" src="/img/special-promotions/lucky-winner.png" alt="collections">
+                                <div class="promo-card-name">
+                                    <h1>Lucky Winner</h1>
+                                    <p>Login every day <br> up to €3,000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Special promotions-end -->
+
+
+            <!-- Article -->
+            <article >
+                <div class="article-container">
+                    
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Technical supremacy of AmunRa Casino <img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>
+                                    Enter the vast and magical kingdom of Ancient Egypt in the immersive adventure added to the iGaming world called AmunRa. AmunRa is an online casino and online betting website promising to leave a lasting impact on the industry with its customized content and unique offering. Starting from its design, discover plenty of pyramids, tombs, Pharaoh, sandy dunes, sphinx, Obelix, and more. Get to feel like a wealthy king or queen with the enormous amount of online casino games, various online betting options, breathtaking tournaments with prize pools loaded with gold, a lavish VIP scheme with different perks and advantages, and much more. Don’t forget the different payment options, which are safe and speedy at the same time, as well as the fact that the casino is licensed and delivers a secure gaming environment all-around. When it comes to the online casino section, you can expect different kinds of online slots, authentic live casino games, classic table games, and rewarding jackpot slots. As for the online betting page, find tens of thousands of pre-match and live events on a monthly basis, virtual sports wagering, and even the top-class horse racing! You can watch out for quite competitive and high odds, as well as excellent lines and markets. But, before you immerse yourself in the one-of-a-kind gaming and betting adventure at AmunRa, you should get to know all the perks and advantages you can enjoy with us. Keep on reading to find out all about the special stuff!
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Technical supremacy of AmunRa Casino <img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>
+                                    Enter the vast and magical kingdom of Ancient Egypt in the immersive adventure added to the iGaming world called AmunRa. AmunRa is an online casino and online betting website promising to leave a lasting impact on the industry with its customized content and unique offering. Starting from its design, discover plenty of pyramids, tombs, Pharaoh, sandy dunes, sphinx, Obelix, and more. Get to feel like a wealthy king or queen with the enormous amount of online casino games, various online betting options, breathtaking tournaments with prize pools loaded with gold, a lavish VIP scheme with different perks and advantages, and much more. Don’t forget the different payment options, which are safe and speedy at the same time, as well as the fact that the casino is licensed and delivers a secure gaming environment all-around. When it comes to the online casino section, you can expect different kinds of online slots, authentic live casino games, classic table games, and rewarding jackpot slots. As for the online betting page, find tens of thousands of pre-match and live events on a monthly basis, virtual sports wagering, and even the top-class horse racing! You can watch out for quite competitive and high odds, as well as excellent lines and markets. But, before you immerse yourself in the one-of-a-kind gaming and betting adventure at AmunRa, you should get to know all the perks and advantages you can enjoy with us. Keep on reading to find out all about the special stuff!
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Aesthetic pleasantries at AmunRa Casino<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>
+                                    Enter the vast and magical kingdom of Ancient Egypt in the immersive adventure added to the iGaming world called AmunRa. AmunRa is an online casino and online betting website promising to leave a lasting impact on the industry with its customized content and unique offering. Starting from its design, discover plenty of pyramids, tombs, Pharaoh, sandy dunes, sphinx, Obelix, and more. Get to feel like a wealthy king or queen with the enormous amount of online casino games, various online betting options, breathtaking tournaments with prize pools loaded with gold, a lavish VIP scheme with different perks and advantages, and much more. Don’t forget the different payment options, which are safe and speedy at the same time, as well as the fact that the casino is licensed and delivers a secure gaming environment all-around. When it comes to the online casino section, you can expect different kinds of online slots, authentic live casino games, classic table games, and rewarding jackpot slots. As for the online betting page, find tens of thousands of pre-match and live events on a monthly basis, virtual sports wagering, and even the top-class horse racing! You can watch out for quite competitive and high odds, as well as excellent lines and markets. But, before you immerse yourself in the one-of-a-kind gaming and betting adventure at AmunRa, you should get to know all the perks and advantages you can enjoy with us. Keep on reading to find out all about the special stuff!
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Brief guide on how to play AmunRa Casino slot games<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>
+                                    Enter the vast and magical kingdom of Ancient Egypt in the immersive adventure added to the iGaming world called AmunRa. AmunRa is an online casino and online betting website promising to leave a lasting impact on the industry with its customized content and unique offering. Starting from its design, discover plenty of pyramids, tombs, Pharaoh, sandy dunes, sphinx, Obelix, and more. Get to feel like a wealthy king or queen with the enormous amount of online casino games, various online betting options, breathtaking tournaments with prize pools loaded with gold, a lavish VIP scheme with different perks and advantages, and much more. Don’t forget the different payment options, which are safe and speedy at the same time, as well as the fact that the casino is licensed and delivers a secure gaming environment all-around. When it comes to the online casino section, you can expect different kinds of online slots, authentic live casino games, classic table games, and rewarding jackpot slots. As for the online betting page, find tens of thousands of pre-match and live events on a monthly basis, virtual sports wagering, and even the top-class horse racing! You can watch out for quite competitive and high odds, as well as excellent lines and markets. But, before you immerse yourself in the one-of-a-kind gaming and betting adventure at AmunRa, you should get to know all the perks and advantages you can enjoy with us. Keep on reading to find out all about the special stuff!
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Online casino AmunRa Casinoo hosts literally thousands of games!<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>
+                                    Enter the vast and magical kingdom of Ancient Egypt in the immersive adventure added to the iGaming world called AmunRa. AmunRa is an online casino and online betting website promising to leave a lasting impact on the industry with its customized content and unique offering. Starting from its design, discover plenty of pyramids, tombs, Pharaoh, sandy dunes, sphinx, Obelix, and more. Get to feel like a wealthy king or queen with the enormous amount of online casino games, various online betting options, breathtaking tournaments with prize pools loaded with gold, a lavish VIP scheme with different perks and advantages, and much more. Don’t forget the different payment options, which are safe and speedy at the same time, as well as the fact that the casino is licensed and delivers a secure gaming environment all-around. When it comes to the online casino section, you can expect different kinds of online slots, authentic live casino games, classic table games, and rewarding jackpot slots. As for the online betting page, find tens of thousands of pre-match and live events on a monthly basis, virtual sports wagering, and even the top-class horse racing! You can watch out for quite competitive and high odds, as well as excellent lines and markets. But, before you immerse yourself in the one-of-a-kind gaming and betting adventure at AmunRa, you should get to know all the perks and advantages you can enjoy with us. Keep on reading to find out all about the special stuff!
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Article-end -->
+            <span class="down-line-bg">
+                <img src="/img/article/down-line-bg.png" alt="down-line">
+            </span>
+
+        </div>
+
+    </div>    
+    <!-- Game-list-end -->
+        
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+
+                <div class="footer-main-item">
+
+                    <div class="footer-main-item-btn">
+                        <div class="footer-main-item-btn-row">
+                            <div class="footer-main-item-img">
+                                <img src="/img/Footer/footer-main/btn-logo.svg" alt="Logo">
+                            </div>
+                            <div class="footer-main-item-list">
+                                <a  class="footer-main-sub-item-link" href="#!">Application</a>
+                                <p class="footer-item-link-p">Mac OS/Windows</p>
+                            </div>
+                        </div>
+                        <div class="footer-main-item-btn-row">
+                            <div class="footer-main-item-img">
+                                <img src="/img/Footer/footer-main/btn-android.svg" alt="android">
+                            </div>
+                            <div class="footer-main-item-list">
+                                <a  class="footer-main-sub-item-link" href="#!">Application</a>
+                                <p class="footer-item-link-p">For Android</p>
+                            </div>
+                        </div>
+
+                        <div class="footer-main-item-btn-row">
+
+                            <div class="footer-main-item-img">
+                                <img src="/img/Footer/footer-main/btn-apple.svg" alt="apple">
+                            </div>
+
+                            <div class="footer-main-item-list">
+                                <a  class="footer-main-sub-item-link" href="#!">Application</a>
+                                <p class="footer-item-link-p">Mac OS/Windows</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-main-sub-item-btn">
+
+                            <div class="footer-main-sub-item-row">
+
+                                    <div class="footer-main-sub-item-img">
+                                        <img src="/img/Footer/footer-main/btn-language.svg" alt="language">
+                                    </div>
+
+                                    <div class="footer-main-sub-item-list">
+                                        <a  class="footer-main-sub-item-link" href="#!">English</a>
     
+                                    </div>
+
+
+                            </div>
+                            <div class="footer-main-sub-item-row">
+
+                                    <div class="footer-main-sub-item-img">
+                                        <img src="/img/Footer/footer-main/btn-live-chat.svg" alt="live-chat">
+                                    </div>
+
+                                    <div class="footer-main-sub-item-list">
+                                        <a  class="footer-main-sub-item-link" href="#!">Live chat</a>
+    
+                                    </div>
+
+
+                            </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-list-container">
+
+                    <div class="footer-list-nav-info">
+                        <div class="footer-list-nav-link">
+                            <a href="#!" class="footer-list-nav-text-style">General Info</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">About Us</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">FAQ</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Sitemap</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Contact us</a>
+                            <a  href="#!" class="footer-list-nav-text-style">Partners</a>
+                            <a  href="#!" class="footer-list-nav-text-style">Payments</a>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-list-nav-info">
+                        <div class="footer-list-nav-link">
+                            <a href="#!" class="footer-list-nav-text-style">Security and Privacy</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Privacy Policy</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Responsible Gaming</a>
+                            <a class="footer-list-nav-text-style" href="#!" >Terms & Conditions</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Terms & Conditions</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Complaints</a>
+        
+                        </div>
+
+                    </div>
+
+                    <div class="footer-list-nav-info">
+                        <div class="footer-list-nav-link">
+                            <a href="#!" class="footer-list-nav-text-style">Casino</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Top</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">New</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Popular</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Slots</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Table Games</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Jackpots</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Live Games</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">All Games</a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-list-nav-info">
+                        <div class="footer-list-nav-link">
+                            <a href="#!" class="footer-list-nav-text-style">Live Casino</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Top Rated</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Club Royale</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Blackjack</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Game Shows</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Baccarat & Dice</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Poker</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">All Live Casino</a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-list-nav-info">
+                        <div class="footer-list-nav-link">
+                            <a href="#!" class="footer-list-nav-text-style">Sports</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Sportsbook</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Live betting</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Horse racing</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Virtuals</a>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-list-nav-info">
+                        <div class="footer-list-nav-link">
+                            <a href="#!" class="footer-list-nav-text-style">AmunRa Promotions</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Casino Promotions</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Live betting</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Sports Promotions</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Shop</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Tournaments</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">VIP Levels</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Weekly Challenges</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Collections</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Spin Rally</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Lucky Winner</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Weekly Challenges</a>
+                            <a class="footer-sublist-nav-text-style" href="#!">Bonus Crab</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- footer-list-mob -->
+                <div class="footer-list-container-mob">
+
+                    <div class="dropdown-footer">
+                        <button class="dropdown-btn">General Info<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>About Us</p>
+                                <p>FAQ</p>
+                                <p>Sitemap</p>
+                                <p>Contact us</p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-footer">
+                        <button class="dropdown-btn">Casino<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>New</p>
+                                <p>Popular</p>
+                                <p>Table Games</p>
+                                <p>Jackpots</p>
+                                <p>Live Games</p>
+                                <p>All Games</p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-footer">
+                        <button class="dropdown-btn">Live Casino<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>Top Rated</p>
+                                <p>Club Royale</p>
+                                <p>Roulette</p>
+                                <p>Blackjack</p>
+                                <p>Game Shows</p>
+                                <p>Baccarat & Dice</p>
+                                <p>Poker</p>
+                                <p>All Live Casino</p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-footer">
+                        <button class="dropdown-btn"> Sports<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>Sportsbook</p>
+                                <p>Live betting</p>
+                                <p>Horse racing</p>
+                                <p>Virtuals</p>
+                            </section>
+                    
+                        </div>
+                    </div>
+
+                    <div class="dropdown-footer">
+                        <button class="dropdown-btn"> Security and Privacy<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>Privacy Policy</p>
+                                <p>Cookie Policy</p>
+                                <p>Responsible Gaming</p>
+                            </section>
+                    
+                        </div>
+                    </div>
+
+                    <div class="dropdown-footer">
+                        <button class="dropdown-btn">Terms & Conditions<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>Terms & Conditions</p>
+                                <p>Complaints</p>
+                            </section>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown-footer">
+                        <button class="dropdown-btn">AmunRa Promotions<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>Casino Promotions</p>
+                                <p>Sports Promotions</p>
+                                <p>Shop</p>
+                                <p>Tournaments</p>
+                                <p>VIP Levels</p>
+                                <p>Weekly Challenges</p>
+                                <p>Collections</p>
+                                <p>Spin Rally</p>
+                                <p>Lucky Winner</p>
+                                <p>Bonus Crab</p>
+                            </section>
+                    
+                        </div>
+                    </div>
+
+                    <div class="dropdown-footer">
+                        <button class="dropdown-btn">Payments<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>Payments</p>
+                            </section>
+                    
+                        </div>
+                    </div>
+
+                    <div class="dropdown-footer">
+                        <button class="dropdown-btn">Partners<img class="article-arrow" src="/img/article/arrow-icon.svg" alt="arrow-icon"></button>
+                        <div class="dropdown-content">
+                            <section class="seo-text">
+                                <p>Partners</p>
+                            </section>
+                    
+                        </div>
+                    </div>
+
+                </div>
+                <!-- footer-list-mob-end -->
+
+                <div class="footer-payment-method">
+                    <div class="payment-method-btn">
+
+                        <a class="payment-method-link" href="#!"><img src="/img/Footer/paymsystem_visa.svg" alt="visa"></a>
+
+                        <a class="payment-method-link" href="#!"><img src="/img/Footer/mastercard.svg" alt="visa"></a>
+
+                        <a class="payment-method-link" href="#!"><img src="/img/Footer/ezeewallet.svg" alt="visa"></a>
+
+                        <a class="payment-method-link" href="#!">Show more <img src="/img/Footer/show-more-arr.svg" alt="arr-right"></a>
+                    </div>
+                </div>
+
+
+                <div class="footer-licenses">
+                    <div class="licenses-list-img">
+                        <img class="licenses-img" src="/img/Footer/licences/iso.svg" alt="iso">
+                        <img class="licenses-img" src="/img/Footer/licences/curacao.svg" alt="curacao">
+                        <img class="licenses-img" src="/img/Footer/licences/Frame.svg" alt="frame">
+                        <img class="licenses-img" src="/img/Footer/licences/18+.svg" alt="18+">
+                    </div>
+
+                    <div class="footer-licenses-text">
+                        <div class="footer-licenses-text-title">
+                            <a href="#!">License <img src="/img/Footer/licences/license-arr.svg" alt="arr"></a>
+                            
+                        </div>
+ 
+                        <p>Gambling can be addictive. Play responsibly. Amunra.com accepts customers only over 18 years of age.</p>
+                        <p>2023 © Amunra.com All rights reserved</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        
+    </footer>
+
+    <!-- Footer-end -->
+
+
+
+
+
+
+    <script src="/main.js"></script>
 </body>
+
 </html>

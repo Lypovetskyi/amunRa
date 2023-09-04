@@ -1,0 +1,287 @@
+/* Общий стиль для мобильной адаптации */
+@media screen and (max-width: 1024px) {
+  body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
+  }
+
+  .header-container {
+      background-image: url(/mobile-css/1024/header/header1024.png);
+      position: relative;
+      height: 104px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      margin: 0 auto;
+      max-width: 1024px;
+  }
+  .header-nav {
+    width: 385px;
+  }
+
+  .burger-btn {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  .header-logo-img-mob {
+    width: 133px;
+    height: 36px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -345px;
+    top: 8px;
+  }
+  #burger-nav-desc {
+      display: none;
+  }
+
+  .burger-nav-mob {
+      display: none;
+      position: absolute;
+      top: 0;
+      width: 250px;
+      background-color: brown;
+      text-align: center;
+  }
+
+  .burger-btn-link {
+      background-image: url(/mobile-css/1024/header/burger.svg);
+      position: relative;
+      display: inline-block;
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+  }
+
+  .burger-btn-link:hover {
+      transform: translateY(-3px);
+  }
+
+  .burger-btn-img-desc {
+      display: none;
+  }
+
+  .burger-btn-img-mob {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+  }
+
+  .header-sub-nav {
+      background-image: none;
+      width: 242px;
+      margin: 0 auto;
+      padding: 0 auto;
+  }
+
+  .header-sub-nav-links {
+      text-align: center;
+      width: 242px;
+      margin: 0 auto;
+      margin-top: 60px;
+  }
+
+  .header-logo-img {
+      display: none;
+      position: center;
+  }
+
+  .header-logo {
+      margin-left: 0;
+  }
+
+  .burger-btn-link {
+      display: block;
+      position: relative;
+  }
+
+  .burger-nav.active {
+      display: block;
+  }
+
+  .burger-nav-desc {
+      display: none;
+  }
+
+  .header-btn {
+      display: flex;
+      justify-content: center;
+      height: 42px;
+      margin: 6px 0;
+      text-align: center;
+      align-items: center;
+      padding: 0;
+      margin-right: 8px;
+      width: 248px;
+  }
+
+  .btn-crab,
+  .btn-search {
+      display: none;
+  }
+
+  .sub_nav__list-link {
+      color: var(--light-brown-1, #E9C8B0);
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18px;
+      text-transform: uppercase;
+  }
+
+  .btn-login {
+      width: 112px;
+  }
+
+  .btn-login::before {
+      width: 108px;
+  }
+
+  .btn-join-now {
+      position: relative;
+      width: 128px;
+      min-height: 40px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, #FFF614 40.10%, #FF7A00 49.48%);
+      box-shadow: 0px 3.6363635063171387px 7.272727012634277px 0px rgba(82, 48, 8, 0.20);
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s ease;
+  }
+
+  .btn-join-now::before {
+      content: "join now";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 124px;
+      height: 36px;
+      transition: background var(--transitionTime);
+      color: #FFF;
+      text-align: center;
+      text-shadow: 1px -1px 1px #4C1405;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      text-align: center;
+      align-items: center;
+      padding-top: 9px;
+      padding-bottom: 7px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #18E0C8 0%, #1A8B92 100%);
+      box-shadow: 0px 1px 1px 0px #FFF615, 0px -2px 20px 0px #116A7D inset;
+  }
+
+  /* main */
+  .main {
+      margin-top: -50px;
+      display: block;
+  }
+
+  .main-btn-arr {
+      display: none;
+  }
+
+  /* game list item */
+  .game-list-item {
+      margin-right: 20px;
+      margin-left: 20px;
+      max-width: 1018px;
+      overflow-x: auto;
+      padding: 0;
+  }
+
+  .game-list-item-link {}
+
+  .games-title {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1024px;
+      position: relative;
+      margin: 15px;
+  }
+
+  .title-text,
+  .title-game {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .game-list-container {
+      max-width: 1024px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  /* promotions-list */
+  .promotions-list {
+      max-width: 1024px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .promo-list-card {
+      margin-bottom: 16px;
+  }
+
+  .promotions-list-item {
+      max-width: 1024px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 100px;
+      row-gap: 30px;
+  }
+
+  .promotions-container {
+      max-width: 1024px;
+      margin-right: 20px;
+      margin-left: 20px;
+      position: relative;
+  }
+
+  .down-line-bg img {
+      max-width: 1024px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .promo-card-name {
+      height: 140px;
+  }
+
+  /* footer */
+  .footer {
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+  }
+
+  .footer-container {
+      max-width: 930px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .footer-list-container {
+      max-width: 1024px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+}

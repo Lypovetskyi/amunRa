@@ -1,97 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmunRa</title>
-
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <!-- Header -->
-    <header class="header"> 
-        <div class="header-container">
-            <div class="header-nav">
-                <div class="burger-btn">
-                    <a class="burger-btn-link" href="#!"><img src="/img/Header/burger-btn.png" alt="burger"></a>
-                </div>
-                <div class="burger-nav">
-                    <a href="#!" class="nav__list-link">Promotions</a>
-                    <a href="#!" class="nav__list-link">Collections</a>
-                    <a href="#!" class="nav__list-link">Shop</a>
-                </div>
-            </div> 
-
-            <div class="header-logo">
-                <div class="header-logo-img">
-                    <a class="header-logo-link" href="#!"><img src="/img/Header/header-logo.svg" alt="AmunRa"></a>
-                </div>
-                <div class="header-sub-nav">
-                    <div class="header-sub-nav-links">
-                        <a href="#!" class="sub_nav__list-link">Casino</a>
-                        <a href="#!" class="sub_nav__list-link">Live Casino</a>
-                        <a href="#!" class="sub_nav__list-link">Sports</a>
-                    </div>
-                
-                </div>
-            </div>
-
-            <div class="header-btn">
-                <a class="btn-crab" href="#!"><img src="/img/Header/btn-crab.svg" alt="crab"></a>
-                <a class="btn-login" href="#!">Login</a>
-                <a class="btn-join-now" href="#!">Join now</a>
-                <a class="btn-search" href="#!"><img src="/img/Header/btn-search.svg" alt=""></a>
-            </div>
-        </div>
-    </header>
-
-
-    
-</body>
-</html>
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
-    display: block;
+    /* display: block; */
+    background-image: url(/img/main/general-bg.jpg);
+    max-width: 1920px;
+    height: 100%;
+    position: relative;
 }
+
+
+/* Header  */
 
 .header {
     margin: 0 auto;  
+
 }
 
 
 .header-container {
+    background-image: url(/img/header/header-bg.png);
     position: relative;
     height: 50px;
-    background-image: url(/img/Header/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-
     max-width: 1920px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
+    cursor: pointer; 
 }
+
 .header-nav {
-    width: 326px;
+    width: 365px;
     display: flex;
     align-items: center;
     margin-left: 8px;
     column-gap: 28px;
 }
+.header-logo-img-mob {
+    display: none;
+}
 .burger-btn {
     align-items: center;
+}
+.burger-btn-img-mob {
+    display: none;
 }
 .burger-btn-link  {
     color: aliceblue;
 }
-.burger-nav {
+
+.burger-nav-desc{
     display: flex;
     column-gap: 23px;
-
+}
+.burger-nav-mob {
+    display: none;
+}
+#burger-menu-mob {
+    display: none;
 }
 
  .nav__list-link {
@@ -103,6 +70,7 @@ body {
     color: var(--light-brown-1, #E9C8B0);
     transition: color 0.3s ease, transform 0.2s ease;
     transform-origin: center bottom;
+    text-transform: uppercase;
  }
 .nav__list-link:hover {
     color: var(--hover-color, #FF5733); 
@@ -132,7 +100,7 @@ body {
 }
 
 .header-sub-nav {
-    position: absolute;
+    position: relative;
     width: 390px;
     margin: -7px 0 0 0;
 
@@ -144,7 +112,6 @@ body {
     background-image: url(/img/Header/header-sub-nav-bg.png);
     background-size:cover;
     background-repeat: no-repeat;
-    position: relative;
 }
 .header-sub-nav-links {
     width: 262px;
@@ -156,15 +123,7 @@ body {
     margin-left: auto;
     padding: 0 auto;
 }
-.header-sub_nav {
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    align-items: center;
-  
-}
+
 .sub_nav__list-link {
     font-size: 14px;
     font-style: normal;
@@ -173,6 +132,7 @@ body {
     color: var(--light-brown-1, #E9C8B0);
      transition: color 0.3s ease, transform 0.2s ease;
     transform-origin: center bottom;
+    text-transform: uppercase;
 }
 
 .sub_nav__list-link:hover {
@@ -196,7 +156,6 @@ body {
 .btn-login,
 .btn-join-now {
     position: relative;
-    min-width: 140px;
     min-height: 40px;
     border-radius: 22px;
     background: linear-gradient(180deg, #FFD159 40.10%, #FF7A00 49.48%);
@@ -238,6 +197,7 @@ body {
     padding-top: 9px;
     padding-bottom: 7px;
 }
+
 .btn-join-now::before {
     content: "join now";
     position: absolute;
@@ -284,3 +244,6 @@ body {
 .btn-crab:hover {
     transform: translateY(-2px);
 }
+
+/* Header */
+

@@ -1,0 +1,410 @@
+/* Общий стиль для мобильной адаптации */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+    }
+    .header {
+        width: 768px;
+        height: 104px;
+    }
+  
+    .header-container {
+        background-image: url(/mobile-css/1024/header/header1024.png);
+        position: relative;
+        height: 104px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        margin: 0 auto;
+        max-width: 768px;
+    }
+    .header-nav {
+      width: 385px;
+    }
+  
+    .burger-btn {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
+    .header-logo-img-mob {
+      width: 133px;
+      height: 36px;
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -215px;
+      top: 8px;
+    }
+    #burger-nav-desc {
+        display: none;
+    }
+  
+    .burger-nav-mob {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 250px;
+        background-color: brown;
+        text-align: center;
+    }
+  
+    .burger-btn-link {
+        background-image: url(/mobile-css/1024/header/burger.svg);
+        position: relative;
+        display: inline-block;
+        background-repeat: no-repeat;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+    }
+  
+    .burger-btn-link:hover {
+        transform: translateY(-3px);
+    }
+  
+    .burger-btn-img-desc {
+        display: none;
+    }
+  
+    .burger-btn-img-mob {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+    }
+  
+    .header-sub-nav {
+        background-image: none;
+        width: 242px;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+  
+    .header-sub-nav-links {
+        text-align: center;
+        width: 225px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+  
+    .header-logo-img {
+        display: none;
+        position: center;
+    }
+  
+    .header-logo {
+        margin-left: 0;
+    }
+  
+    .burger-btn-link {
+        display: block;
+        position: relative;
+    }
+  
+    .burger-nav.active {
+        display: block;
+    }
+  
+    .burger-nav-desc {
+        display: none;
+    }
+  
+    .header-btn {
+        display: flex;
+        justify-content: center;
+        height: 42px;
+        margin: 6px 0;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        margin-right: 8px;
+        width: 248px;
+    }
+  
+    .btn-crab,
+    .btn-search {
+        display: none;
+    }
+  
+    .sub_nav__list-link {
+        color: var(--light-brown-1, #E9C8B0);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+  
+    .btn-login {
+        width: 112px;
+    }
+  
+    .btn-login::before {
+        width: 108px;
+    }
+  
+    .btn-join-now {
+        position: relative;
+        width: 128px;
+        min-height: 40px;
+        border-radius: 22px;
+        background: linear-gradient(180deg, #FFF614 40.10%, #FF7A00 49.48%);
+        box-shadow: 0px 3.6363635063171387px 7.272727012634277px 0px rgba(82, 48, 8, 0.20);
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.2s ease;
+    }
+  
+    .btn-join-now::before {
+        content: "join now";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 124px;
+        height: 36px;
+        transition: background var(--transitionTime);
+        color: #FFF;
+        text-align: center;
+        text-shadow: 1px -1px 1px #4C1405;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        text-align: center;
+        align-items: center;
+        padding-top: 9px;
+        padding-bottom: 7px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, #18E0C8 0%, #1A8B92 100%);
+        box-shadow: 0px 1px 1px 0px #FFF615, 0px -2px 20px 0px #116A7D inset;
+    }
+  
+    /* main */
+    .main {
+        margin-top: -50px;
+        display: block;
+    }
+  
+    .main-btn-arr {
+        display: none;
+    }
+  
+    /* game list item */
+    .game-list-item {
+        margin-left: 16px;
+        max-width: 768px;
+        overflow-x: auto;
+        padding: 0;
+    }
+  
+    .game-list-item-link {}
+  
+    .games-title {
+        display: flex;
+        justify-content: space-between;
+        max-width: 768px;
+        position: relative;
+        margin: 15px;
+    }
+  
+    .title-text,
+    .title-game {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .game-list-container {
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+        white-space: nowrap; /* Запрещаем перенос строк внутри контейнера */
+    }
+    
+    .game-list-item {
+        display: inline-block; /* Делаем карточки строчными элементами */
+        width: 736px; /* Устанавливаем ширину каждой карточки на 50%, чтобы они были по две в ряду */
+        box-sizing: border-box;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 8px; /* Добавляем небольшие отступы между карточками */
+    }
+    
+    
+  
+    /* promotions-list */
+    .promotions-list {
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+  
+    .promo-list-card {
+        margin-bottom: 16px;
+    }
+  
+    .promotions-list-item {
+        column-gap: 16px;
+        row-gap: 16px ;
+        max-width: 736px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  
+    .promotions-container {
+        max-width: 768px;
+        margin-right: 20px;
+        margin-left: 20px;
+        position: relative;
+    }
+  
+    
+    /* Добавляем стили для каждой ссылки */
+    .promo-list-item-link {
+        width: calc(50% - 10px); /* Равномерное распределение на 2 колонки с отступами */
+        margin-bottom: 20px; /* Отступ между ссылками */
+        box-sizing: border-box; /* Учитываем отступы внутри элемента */
+    }
+  
+    .down-line-bg img {
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+  
+    .promo-card-name {
+        height: 140px;
+    }
+
+    /* article-container */
+    .article-container {
+        width: 736px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .dropdown {
+        width: 736px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .dropdown-btn {
+        width: 736px;
+    }
+
+
+    .article-container {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+  
+    /* footer */
+    .footer {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+  
+    .footer-container {
+        max-width: 930px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+  
+    .footer-list-container {
+        display: none;
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer-list-container-mob {
+        display: block;
+        color: #FF7A00;
+    }
+    .dropdown-footer {
+        position: relative;
+        padding-top: 10px;
+    }
+    .dropdown-footer::after {
+        content: "";
+        width: 720px; /* Ширина линии */
+        height: 1px;
+        opacity: 0.5;
+        background-color: #E9C8B0; /* Цвет линии */
+        display: block;
+        position: absolute;
+        left: 50%; /* Перемещаем линию на 50% ширины экрана */
+        transform: translateX(-50%); /* Центрируем линию относительно ее собственной ширины */
+        bottom: 0;
+    }
+    
+    .seo-text {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .seo-text p {
+        display: flex;
+        justify-content: center;
+        width: 670px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 4px;
+
+        flex-wrap: wrap; /* Разрешить перенос текста на новую строку */
+        white-space: normal;
+    }
+    .payment-method-btn  {
+        flex-wrap: wrap;
+    }
+    
+
+    .footer-main-item {
+        width: 768px;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        margin-bottom: 180px;
+    }
+    .footer-main-sub-item-row {
+        width: 331px;
+        height: 52px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer-main-item-btn {
+        width: 768px;
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: center;
+        position: absolute;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer-main-item-btn-row {
+        margin-bottom: 8px;
+    }
+  }
+  
